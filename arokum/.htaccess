@@ -1,0 +1,6 @@
+RewriteEngine On
+Options +FollowSymLinks
+RewriteRule ^([0-9a-zA-Z-]+)/?/?$ /surat_baru/index.php?page=$1
+RewriteRule ^cuti\.mu$ index.php?view=cuti&id=$1 [L]
+RewriteRule ^mutasi\.mu$ index.php?view=mutasi&id=$1 [L]
+RewriteRule ^jeniscuti\.mu$ index.php?view=jeniscuti&id=$1 [L]
